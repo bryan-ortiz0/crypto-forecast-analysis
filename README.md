@@ -41,7 +41,7 @@ Next, we look at the autocorrelation within our dataset with lots of noise and n
 | close    | -1.50         | 0.53    |
 | close_log| -0.79         | 0.82    |
 
-ADF statistic and p-value indicate weak evidence against the null hypothesis, suggesting the precent of a unit root, hence, nonstationarity.
+ADF statistic and p-value indicate weak evidence against the null hypothesis, suggesting nonstationarity.
 
 ## Model Training & Evaluation
 ### 1. AutoRegressive Integrated Moving Average (ARIMA)
