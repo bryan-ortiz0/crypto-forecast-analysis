@@ -27,7 +27,7 @@ Zooming onto 2021 reveals striking price action for Ethereum.
 ![ethereum_closing_prices_2021_daily_weekly_monthly_views](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/76fdd41e-2e0e-46eb-9ae3-384cb3cb2725)
 
 ## Sentiment Analysis
-I included sentiment anaysis derived from Wikipedia revisions associated with Ethereum. Interestingly enough, negative sentiment towards Etherleum was at its highest while price was also surging to new all time highs but sentiment is shifting as the technology matures.
+I included sentiment anaysis derived from Wikipedia revisions associated with Ethereum. Interestingly enough, negative sentiment towards Ethereum was at its highest while price was also surging to new all time highs but sentiment is shifting as the technology matures.
 
 ![ethereum_sentiment_and_neg_sentiment](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/b1989a65-77c3-4ce0-b2e6-8dd41d728245)
 
