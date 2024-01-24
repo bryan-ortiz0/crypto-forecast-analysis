@@ -44,8 +44,8 @@ Next, we look at the autocorrelation within our dataset with lots of noise and n
 ADF statistic and p-value indicate weak evidence against the null hypothesis, suggesting nonstationarity.
 
 ## Model Training & Evaluation
-### 1. AutoRegressive Integrated Moving Average (ARIMA)
-Classical linear model for stationary time-series forecasting, composed of autoregressive (AR), integrated (I), and moving average (MA) components. Applicable for short-term forecasting, assuming no significant structural variations exist in the series. Serves as a baseline reference point to gauge effectiveness of other models.
+### 1. AutoRegressive Integrated Moving Average (ARIMA (4,1,0))
+Classical linear model for stationary time-series forecasting, composed of autoregressive (AR(4)), integrated (I(1)), and moving average (MA(0)) components. Applicable for short-term forecasting, assuming no significant structural variations exist in the series. Serves as a baseline reference point to gauge effectiveness of other models.
 ### 2. Random Forest (RF)
 Ensemble method integrating multiple decision tree learners, mitigating risk of overfitting. Utilizes bootstrap sampling, feature randomness, and aggregating outputs for heightened precision and stability. Effectively manages non-stationarity, non-linearity, and noise in vast feature domains.
 ### 3. eXtreme Gradient Boosting (XGBoost)
@@ -58,7 +58,7 @@ Specialized Recurrent Neural Network (RNN) engineered for handling sequential da
 ## Model Metrics
 | Model | R² | MAE |
 | :---: | :-: | :-: |
-| ARIMA | TBD | TBD|
+| ARIMA (4,1,0) | TBD | TBD|
 | Random Forest | TBD | TBD |
 | XGBoost | TBD | TBD |
 | CNN | TBD | TBD | 
