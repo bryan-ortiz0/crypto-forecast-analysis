@@ -48,24 +48,50 @@ ADF statistic and p-value indicate weak evidence against the null hypothesis, su
 Classical linear model for stationary time-series forecasting, composed of autoregressive (AR(4)), integrated (I(1)), and moving average (MA(0)) components. Applicable for short-term forecasting, assuming no significant structural variations exist in the series. Serves as a baseline reference point to gauge effectiveness of other models.
 ### 2. Random Forest (RF)
 Ensemble method integrating multiple decision tree learners, mitigating risk of overfitting. Utilizes bootstrap sampling, feature randomness, and aggregating outputs for heightened precision and stability. Effectively manages non-stationarity, non-linearity, and noise in vast feature domains.
+
+Random Forest model did a good job with the predicted and actual prices but a slight lag is observed.
+
+![randomforest_model](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/c3ce67e1-a6c4-4fc4-ba33-f8eb3c7c7aec)
+
 ### 3. eXtreme Gradient Boosting (XGBoost)
 Potent gradient-boosting mechanism augmenting traditional Generalized Linear Models (GLMs) with native support for managing missing values. Delivers exceptional efficacy, versatility, and regulatory controls. Adapable to complex patterns, captitalizing on nuanced interactions amongst features.
+
+XGBoost model does the best in terms of generalizing the predicted pricing and the actual prices.
+![xgboost_model](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/f0ca21c8-ad90-42fe-90a4-8574c05d3536)
+
 ### 4. Convolutional Neural Network (CNN)
 Deep learning design originally developed for image recognition tasks, repurposed for sequence prediction challenges. Comprises convolution filters, pooling layers, and fully connected networks to construct hierarchical abstractions. Efficient at discerning regional motifs, periodicities, and abrupt transitions common in cryptocurrency markets.
+
+CNN model does a good job generalizing with the actual price but comes with a slight lag.
+
+![cnn_model](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/233a84a5-5389-4c92-990c-e29b1e9360a1)
+
+Testing data is underfit and could use more improvements to stabilize.
+
+![cnn_mae_loss](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/6efd872a-36c5-4c90-9434-9887ac3dd48c)
+
 ### 5. Long Short-Term Memory (LSTM)
 Specialized Recurrent Neural Network (RNN) engineered for handling sequential data mining tasks. Features sophisticated gatekeeping mechanisms, maintaining context awareness across evolving situations. Mitigates vanishing gradients, preserving informational continuity amidst dynamic market scenarios, frequently encountered in cryptocurrencies.
+
+LSTM model predicted prices generalizes really well with the actual price.
+
+![lstm_model](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/440c654f-4a3f-4ea7-90f2-f2ee0bb7dcec)
+
+Testing data is slightly underfit but can become more stabilized with some parameter tuning.
+
+![lstm_mae_loss](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/0abe780a-baed-4179-ae19-08d3f0d54e43)
 
 ## Model Metrics
 | Model | R² | MAE |
 | :---: | :-: | :-: |
 | ARIMA (4,1,0) | TBD | TBD|
-| Random Forest | TBD | TBD |
-| XGBoost | TBD | TBD |
-| CNN | TBD | TBD | 
-| LSTM | TBD | TBD |
+| Random Forest | 0.979 | .00144 |
+| XGBoost | .981 | .00137 |
+| CNN | 0.961 | .00211 | 
+| LSTM | .968 | .00170 |
 
 ## Optimal Model for Holdout Data
-Finally, having trained and evaluated the models, we choose the top-performing model, 'model_name', and validate on the holdout data set. This step aims to validate the model's ability to produce accurate forecasts beyond the initial training and testing intervals.
+Finally, having trained and evaluated the models, we choose the top-performing model, XGBoost, and validate on the holdout data set. This step aims to validate the model's ability to produce accurate forecasts beyond the initial training and testing intervals.
 
 ## Summary
 We explored the exciting of cryptocurrency analytics, combining sentiment analysis and machine learning techniques to illuminate hidden patterns and derive meaningful insights. Through diligent preparation, meticulous model construction, and rigorous evaluation, we identified potent contenders for profitable investment guidance. 
