@@ -84,7 +84,7 @@ Testing data is slightly underfit but can become more stabilized with some param
 ## Model Metrics
 | Model | R² | MAE |
 | :---: | :-: | :-: |
-| ARIMA (4,1,0) | TBD | TBD|
+| ARIMA (4,1,0) | 0.994 | 8.850 |
 | Random Forest | 0.979 | .00144 |
 | XGBoost | .981 | .00137 |
 | CNN | 0.961 | .00211 | 
