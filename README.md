@@ -27,7 +27,7 @@ Zooming onto 2021 reveals striking price action for Ethereum.
 ![ethereum_closing_prices_2021_daily_weekly_monthly_views](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/76fdd41e-2e0e-46eb-9ae3-384cb3cb2725)
 
 ## Sentiment Analysis
-I included sentiment anaysis derived from Wikipedia revisions associated with Ethereum. Interestly enough, negative sentiment towards Etherleum was at its highest while price was also surging to new all time highs but sentiment is shifting as the technology matures.
+I included sentiment anaysis derived from Wikipedia revisions associated with Ethereum. Interestingly enough, negative sentiment towards Etherleum was at its highest while price was also surging to new all time highs but sentiment is shifting as the technology matures.
 
 ![ethereum_sentiment_and_neg_sentiment](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/b1989a65-77c3-4ce0-b2e6-8dd41d728245)
 
@@ -65,10 +65,10 @@ Specialized Recurrent Neural Network (RNN) engineered for handling sequential da
 | LSTM | TBD | TBD |
 
 ## Optimal Model for Holdout Data
-Finally, having trained and evaluated the models, we choose the top-performing model, 'model_name', and compare its performance against the held-back portion of the Ethereum hourly dataset, commonly known as the holdout data. This step serves to validate the model's ability to produce accurate forecasts beyond the initial training and testing intervals.
+Finally, having trained and evaluated the models, we choose the top-performing model, 'model_name', and validate on the holdout data set. This step aims to validate the model's ability to produce accurate forecasts beyond the initial training and testing intervals.
 
 ## Summary
-We explored the exciting of cryptocurrency analytics, combining sentiment analysis and machine learning techniques to illuminate hidden patterns and derive meaningful insights. Through deligient preparation, meticulous model consturciton, and rigorous evaluation, we identified potent contenders for profitable investment guidance. 
+We explored the exciting of cryptocurrency analytics, combining sentiment analysis and machine learning techniques to illuminate hidden patterns and derive meaningful insights. Through diligent preparation, meticulous model construction, and rigorous evaluation, we identified potent contenders for profitable investment guidance. 
 
 ## Future Work
 - [ ] Incorporating social media feeds and forum discussions to supplement sentiment analysis.
