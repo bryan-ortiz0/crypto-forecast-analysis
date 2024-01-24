@@ -3,7 +3,7 @@
 ![eth](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/cdf14b5c-10ae-4326-bb17-7fd548eeba27)
 
 ## Introduction
-In this repository, we investigate cyrptocurrency volatile market dynamics, focusing primarily on Ethereum (ETH)-USD pairs sourced from [Bitstamp](https://www.bitstamp.net/markets/eth/usd/) and incorporating sentiments derived from [Wikipedia revisions](https://en.wikipedia.org/w/index.php?title=Ethereum&action=history) by utilizing [DistilBERT base uncased finetuned SST-2](https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english) from Hugging Face Transformers. Combining statistical tools, feature engineering, and machine learning models, we thoroughly examine trends, correlations, volatilities, and seasonalities apparent in closing prices, volumes, and sentiments. More importantly, we train and rigorously evaluate five distinct predictive models--**ARIMA**, **Random Forest**, **XGBoost**, **CNN**, and **LSTM**--aiming to pinpoint the most effective approach for generating accurate forecasts. Two critical metrics guide our evaluation: **R²** and **Mean Absolute Error (MAE)**.
+In this repository, we investigate cyrptocurrency market dynamics, focusing primarily on Ethereum (ETH)-USD pairs sourced from [Bitstamp](https://www.bitstamp.net/markets/eth/usd/) and incorporating sentiments derived from [Wikipedia revisions](https://en.wikipedia.org/w/index.php?title=Ethereum&action=history) by utilizing [DistilBERT base uncased finetuned SST-2](https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english) from Hugging Face Transformers. Combining statistical tools, feature engineering, and machine learning models, we thoroughly examine trends, correlations, volatilities, and seasonalities apparent in closing prices, volumes, and sentiments. More importantly, we train and rigorously evaluate five distinct predictive models--**ARIMA**, **Random Forest**, **XGBoost**, **CNN**, and **LSTM**--aiming to pinpoint the most effective approach for generating accurate forecasts. Two critical metrics guide our evaluation: **R²** and **Mean Absolute Error (MAE)**.
 
 Throughout the analysis, we focus on R² and MAE as they reveal essential facets of the predictive capacity of each model.
 
@@ -14,7 +14,7 @@ On the other hand, MAE offers a complementary perspective by measuring the avera
 Using both R² and MAE together ensures balanced scrutiny of moel performance, accounting for goodness-of-fit and error magnitudes. We strive to select the most proficient model capable of producing lucid, reliable forecasts.
 
 ## Exploratory Data Analysis
-First, let us inspect the Ethereum hourly price data retrieved from Bitstamp, covering the period from May 2018 till January 2024.
+First, let us inspect the Ethereum hourly price data retrieved from Bitstamp, covering the period from May 2018 till January 2024, as visualized below. The green and red price bars overlap illustrates the high volatility characteristic of cryptocurrency markets.
 
 ![eth_tableau](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/7ce93a62-f283-45af-b31e-4dad2a765dfd)
 *Made in Tableau*
