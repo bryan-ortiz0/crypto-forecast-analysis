@@ -100,3 +100,4 @@ We explored the exciting of cryptocurrency analytics, combining sentiment analys
 - [ ] Incorporating social media feeds and forum discussions to supplement sentiment analysis.
 - [ ] Experimenting with transfer learning and domain adaptation to leverage pretrained models.
 - [ ] Expand analysis with multiple datasets.
+- [ ] Turn task into a classification instead of regressing onto a continuous target.
