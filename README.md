@@ -2,6 +2,9 @@
 
 <img src="https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/c5db90ff-223e-441d-9f52-ceef27f7e29d" width="1000">
 
+## Executive Summary
+Ethereum cryptocurrency price forecasting pipeline leveraging ML techniques. Rigorous benchmarking of ARIMA, Random Forest, XGBoost, CNN, LSTM models reveals XGBoost as optimal approach based on 0.9933 holdout R2, capturing complex sequential relationships in time series.
+
 ## Introduction
 In this repository, we investigate cyrptocurrency market dynamics, focusing primarily on Ethereum (ETH)-USD pairs sourced from [Bitstamp](https://www.bitstamp.net/markets/eth/usd/) and incorporating sentiments derived from [Wikipedia revisions](https://en.wikipedia.org/w/index.php?title=Ethereum&action=history) by utilizing [DistilBERT base uncased finetuned SST-2](https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english) from Hugging Face Transformers. Combining statistical tools, feature engineering, and machine learning models, we thoroughly examine trends, correlations, volatilities, and seasonalities apparent in closing prices, volumes, and sentiments. More importantly, we train and rigorously evaluate five distinct predictive models--**ARIMA**, **Random Forest**, **XGBoost**, **CNN**, and **LSTM**--aiming to pinpoint the most effective approach for generating accurate forecasts. Two critical metrics guide our evaluation: **R²** and **Mean Absolute Error (MAE)**.
 
@@ -46,6 +49,11 @@ ADF statistic and p-value indicate weak evidence against the null hypothesis, su
 ## Model Training & Evaluation
 ### 1. AutoRegressive Integrated Moving Average (ARIMA (4,1,0))
 Classical linear model for stationary time-series forecasting, composed of autoregressive (AR(4)), integrated (I(1)), and moving average (MA(0)) components. Applicable for short-term forecasting, assuming no significant structural variations exist in the series. Serves as a baseline reference point to gauge effectiveness of other models.
+
+ARIMA model is a strong fit but really high MAE indicates there is considerable prediction error.
+
+![arima_410_model](https://github.com/bryan-ortiz0/crypto-forecast-analysis/assets/130245932/509bf9c1-59ea-4158-9736-7e7bfdb379e3)
+
 ### 2. Random Forest (RF)
 Ensemble method integrating multiple decision tree learners, mitigating risk of overfitting. Utilizes bootstrap sampling, feature randomness, and aggregating outputs for heightened precision and stability. Effectively manages non-stationarity, non-linearity, and noise in vast feature domains.
 
@@ -92,6 +100,14 @@ Testing data is slightly underfit but can become more stabilized with some param
 
 ## Optimal Model for Holdout Data
 Finally, having trained and evaluated the models, we choose the top-performing model, XGBoost, and validate on the holdout data set. This step aims to validate the model's ability to produce accurate forecasts beyond the initial training and testing intervals.
+
+XGBoost model did incredible with the holdout data.
+
+![xgboost_holdout](https://github.com/bryan-ortiz0/crypto-forecast-analysis/assets/130245932/fb356aef-f2a4-4c01-adcd-5a7824a880a4)
+
+| Model | R² | MAE |
+| :---: | :-: | :-: |
+| XGBoost holdout | 0.9933 | 0.0136 |
 
 ## Summary
 We explored the exciting of cryptocurrency analytics, combining sentiment analysis and machine learning techniques to illuminate hidden patterns and derive meaningful insights. Through diligent preparation, meticulous model construction, and rigorous evaluation, we identified potent contenders for profitable investment guidance. 
