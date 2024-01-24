@@ -1,6 +1,6 @@
 # Cryptocurrency Market Forecasting & Sentiment Analysis📈
 
-![eth](https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/cdf14b5c-10ae-4326-bb17-7fd548eeba27)
+<img src="https://github.com/bryan-ortiz0/ETHtractor/assets/130245932/c5db90ff-223e-441d-9f52-ceef27f7e29d" width="1000">
 
 ## Introduction
 In this repository, we investigate cyrptocurrency market dynamics, focusing primarily on Ethereum (ETH)-USD pairs sourced from [Bitstamp](https://www.bitstamp.net/markets/eth/usd/) and incorporating sentiments derived from [Wikipedia revisions](https://en.wikipedia.org/w/index.php?title=Ethereum&action=history) by utilizing [DistilBERT base uncased finetuned SST-2](https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english) from Hugging Face Transformers. Combining statistical tools, feature engineering, and machine learning models, we thoroughly examine trends, correlations, volatilities, and seasonalities apparent in closing prices, volumes, and sentiments. More importantly, we train and rigorously evaluate five distinct predictive models--**ARIMA**, **Random Forest**, **XGBoost**, **CNN**, and **LSTM**--aiming to pinpoint the most effective approach for generating accurate forecasts. Two critical metrics guide our evaluation: **R²** and **Mean Absolute Error (MAE)**.
