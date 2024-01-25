@@ -14,7 +14,7 @@ R², interpreted as the coefficient of determination, represents the ratio of va
 
 On the other hand, MAE offers a complementary perspective by measuring the average magnitude of absolute differences between predicted and actual values. *Lower* MAEs denote more precise predictions, revealing reduced dispersion surrounding the target. While resistant to extreme values, MAE fails to distinguish between positive and negative deviations, thus rendering it insensitive to systematic biases.
 
-Using both R² and MAE together ensures balanced scrutiny of moel performance, accounting for goodness-of-fit and error magnitudes. We strive to select the most proficient model capable of producing lucid, reliable forecasts.
+Using both R² and MAE together ensures balanced scrutiny of model performance, accounting for goodness-of-fit and error magnitudes. We strive to select the most proficient model capable of producing lucid, reliable forecasts.
 
 ## Exploratory Data Analysis
 First, let us inspect the Ethereum hourly price data retrieved from Bitstamp, covering the period from May 2018 till January 2024, as visualized below. The green and red price bars overlap illustrates the high volatility characteristic of cryptocurrency markets.
